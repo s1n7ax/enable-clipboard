@@ -1,14 +1,10 @@
 {
-    "name": "CVAT-Annotate",
+    "name": "enable-clipboard",
     "version": "1.0",
-    "description": "Annotate websites based on the page content",
+    "description": "Enable clipboard and context menu when the website disables it",
     "manifest_version": 3,
-    "permissions": [],
-    "background": {
-        "scripts": ["background.js"],
-        "persistent": false
-    },
-    "browser_action": {
+    "permissions": ["storage", "tabs"],
+    "action": {
         "default_popup": "popup.html",
         "default_icon": {
             "16": "images/get_started16.png",

@@ -12,7 +12,7 @@ console.log('-----------------------------');
 
 const common = {
     entry: {
-        background: './src/background.ts',
+        // background: './src/background.ts',
         content: './src/content.ts',
         popup: './src/popup.ts',
     },
@@ -34,7 +34,7 @@ const common = {
     },
     plugins: [
         new CopyPlugin({
-            patterns: [{ from: 'public', to: 'dist' }],
+            patterns: [{ from: 'public' }],
         }),
     ],
 };
