@@ -4,6 +4,7 @@
     "description": "Enable clipboard and context menu in disabled websites",
     "manifest_version": 3,
     "permissions": ["storage", "tabs"],
+    "icons": { "128": "images/img_enabled128.png" },
     "action": {
         "default_popup": "popup.html",
         "default_icon": {

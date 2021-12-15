@@ -1,15 +1,24 @@
-# typescript-chrome-extension-boilerplate
+# enable-clipboard
 
-This project includes really minimal number of dependencies just enough to get started with Typescript for Chrome extension development. Webpack is included for bundling. Unit testing with Karma (preconfigured only for chrome). This uses jamine as testing framework.
+An opensource chrome plugin to enable the clipboard and context menu in blocked
+websites
 
-## Available Scripts
-In the project directory, you can run:
+## Prerequisites
+* Node JS
+* NPM or Yarn
 
-### `npm watch`
-Watch changes and build the application
+## Manual Build
+* `npm install` or `yarn install` to install dependencies
+* `npm run build:prod` or `yarn run build:prod`
 
-### `npm build`
-Build the application (development build)
+## Install
+* Go to `chrome://extensions/` in chrome
+* Enable `Developer mode`
+* Click on `Load unpacked` and select the `dist` directory in the project root
 
-### `npm test`
-Run Karma to run test suites
+## How to use
+* Install the plugin
+* Go to the website that you want to enable the clipboard and context menu
+* Click on the plugin action icon
+* Click on the  "Unlock the Power" button to add the website
+* Reload the page
