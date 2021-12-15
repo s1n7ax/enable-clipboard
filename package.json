@@ -9,6 +9,7 @@
         "dev": "NODE_ENV=development",
         "prod": "NODE_ENV=production",
         "build": "yarn dev webpack",
+        "build:prod": "yarn prod webpack",
         "watch": "yarn dev webpack --watch",
         "test": "yarn dev karma start",
         "test:watch": "yarn dev karma start"
