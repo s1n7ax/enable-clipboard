@@ -1,7 +1,7 @@
 {
-    "name": "enable-clipboard",
+    "name": "Enable Clipboard",
     "version": "1.0",
-    "description": "Enable clipboard and context menu when the website disables it",
+    "description": "Enable clipboard and context menu in disabled websites",
     "manifest_version": 3,
     "permissions": ["storage", "tabs"],
     "action": {
