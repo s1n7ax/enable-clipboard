@@ -2,7 +2,7 @@ export default class Whitelist {
     getWhitelist(): Promise<Array<string>> {
         return new Promise((res) => {
             chrome.storage.local.get('whitelist', (data: any) => {
-                res(data.whitelist);
+                res(data.whitelist || []);
             });
         });
     }
