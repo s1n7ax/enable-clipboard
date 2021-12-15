@@ -19,10 +19,11 @@ const getCurrentTabHost = (): Promise<string | null> => {
 };
 
 class WebsiteTable {
-    private table: HTMLTableElement;
+    private table: HTMLTableSectionElement;
 
     constructor(id: string) {
-        this.table = document.getElementById(id) as HTMLTableElement;
+        let table = document.getElementById(id) as HTMLTableElement;
+        this.table = table.createTBody();
     }
 
     addAll(websites: Array<string>) {
@@ -36,9 +37,15 @@ class WebsiteTable {
 
         row.insertCell(0).appendChild(document.createTextNode(website));
 
-        const btn = document.createElement('button');
-        btn.innerText = 'X';
-        btn.addEventListener(
+        const cell = row.insertCell(1);
+        cell.innerHTML = `
+            <div class="close-container">
+                <div class="leftright"></div>
+                <div class="rightleft"></div>
+            </div>
+        `;
+
+        cell.addEventListener(
             'click',
             () => {
                 whitelist.removeWebsite(website);
@@ -48,7 +55,6 @@ class WebsiteTable {
                 once: true,
             }
         );
-        row.insertCell(1).appendChild(btn);
 
         return row;
     }
