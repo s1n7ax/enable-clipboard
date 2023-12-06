@@ -3,6 +3,10 @@
 An opensource chrome plugin to enable the clipboard and context menu in blocked
 websites
 
+## Installing from Chrome Store
+
+Now the plugin is publised in chrome store. [Download it here](https://chrome.google.com/webstore/detail/enable-clipboard/oabailhgoobiboghkmlppflobceplfde)
+
 ## Prerequisites
 * Node JS
 * NPM or Yarn
